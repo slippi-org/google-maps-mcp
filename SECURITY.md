@@ -1,10 +1,18 @@
-# Security Policy
-Thank you for helping us keep our MCP servers secure.
+# Security Policy - ARCHIVED REPOSITORY
 
-These servers are maintained by [Anthropic](https://www.anthropic.com/) as part of the Model Context Protocol project. 
+⚠️ **IMPORTANT: This repository contains archived reference servers that are no longer maintained.**
 
-The security of our systems and user data is Anthropic’s top priority. We appreciate the work of security researchers acting in good faith in identifying and reporting potential vulnerabilities.
+**NO SECURITY GUARANTEES ARE PROVIDED FOR THESE SERVERS.**
+
+These servers were previously maintained by [Anthropic](https://www.anthropic.com/) as part of the Model Context Protocol project but are now archived.
+
+As these servers are no longer maintained:
+- No security updates will be provided
+- No vulnerability patches will be released
+- Use at your own risk
 
 ## Vulnerability Disclosure Program
 
-Our Vulnerability Program guidelines are defined on our [HackerOne program page](https://hackerone.com/anthropic-vdp). We ask that any validated vulnerability in this functionality be reported through the [submission form](https://hackerone.com/anthropic-vdp/reports/new?type=team&report_type=vulnerability).
+⚠️ **This archived repository is no longer covered by our vulnerability disclosure program.**
+
+For actively maintained MCP projects, please refer to the [Model Context Protocol organization](https://github.com/modelcontextprotocol).
