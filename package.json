@@ -1,33 +1,30 @@
 {
-  "name": "@modelcontextprotocol/servers",
-  "private": true,
-  "version": "0.6.2",
-  "description": "ARCHIVED: Model Context Protocol servers (no longer maintained)",
+  "name": "@slippi-org/google-maps-mcp",
+  "version": "0.1.0.leependu",
+  "description": "MCP server for using the Google Maps API with enhanced features",
   "license": "MIT",
   "author": "Anthropic, PBC (https://anthropic.com)",
-  "homepage": "https://modelcontextprotocol.io",
-  "bugs": "https://github.com/modelcontextprotocol/servers/issues",
+  "homepage": "https://github.com/slippi-org/google-maps-mcp",
+  "bugs": "https://github.com/slippi-org/google-maps-mcp/issues",
   "type": "module",
-  "workspaces": [
-    "src/*"
+  "bin": {
+    "mcp-server-google-maps": "dist/index.js"
+  },
+  "files": [
+    "dist"
   ],
-  "files": [],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "watch": "npm run watch --workspaces",
-    "publish-all": "npm publish --workspaces --access public",
-    "link-all": "npm link --workspaces"
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
   },
   "dependencies": {
-    "@modelcontextprotocol/server-everything": "*",
-    "@modelcontextprotocol/server-gdrive": "*",
-    "@modelcontextprotocol/server-postgres": "*",
-    "@modelcontextprotocol/server-puppeteer": "*",
-    "@modelcontextprotocol/server-slack": "*",
-    "@modelcontextprotocol/server-brave-search": "*",
-    "@modelcontextprotocol/server-memory": "*",
-    "@modelcontextprotocol/server-filesystem": "*",
-    "@modelcontextprotocol/server-everart": "*",
-    "@modelcontextprotocol/server-sequential-thinking": "*"
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "@types/node-fetch": "^2.6.12",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
   }
 }

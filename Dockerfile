@@ -1,8 +1,7 @@
 FROM node:22.12-alpine AS builder
 
-# Must be entire project because `prepare` script is run during `npm install` and requires all files.
-COPY src/slack /app
-COPY tsconfig.json /tsconfig.json
+# Copy entire project for standalone build
+COPY . /app
 
 WORKDIR /app
 
