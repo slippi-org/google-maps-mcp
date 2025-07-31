@@ -70,6 +70,9 @@ gcp-oauth.keys.json
 # macOS
 .DS_Store
 
+# Windows
+desktop.ini
+
 # IDE files
 .idea/
 
